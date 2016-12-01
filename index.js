@@ -5,18 +5,18 @@
 
     // Configs
 
-	// (int) 0~255 明るさの平均からエッジを検出する際の最小値を示す, この明るさを超えるピクセルを検出する, 少ないほど詳細
+	  // (int) 0~255 lower threshold to detect more edges
     var EDGE_DETECT_VALUE = 50;
     // (number) エッジ上のポイントの分布比率, 高いほど詳細, 生成されたポイント数はコンソールを参照
     var POINT_RATE = 0.075;
     // (int) ポイントの最大数, POINT_RATE によるポイント数はこの値を超えない, 大きいほど詳細
-    var POINT_MAX_NUM = 25000;
+    var POINT_MAX_NUM = 2500;
     // (int) 細かいエッジを消すために行うほかしのサイズ, 少ないほど詳細
     var BLUR_SIZE = 2;
     // (int) エッジ検出のサイズ, 大きいほど詳細
     var EDGE_SIZE = 3;
     // (int) 許容ピクセル数, このピクセル数を超える画像が指定された場合リサイズする
-    var PIXEL_LIMIT = 3600000;
+    var PIXEL_LIMIT = 360000;
 
     var GENERAL_MESSAGE = 'Drop image to change source.'; // 通常の表示メッセージ
     var GENERATIONG_MESSAGE = 'Generating...'; // 生成中の表示メッセージ
